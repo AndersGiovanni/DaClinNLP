@@ -109,3 +109,4 @@ ENV/
 .env
 data/
 *DS_Store
+/src/playground/
