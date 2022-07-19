@@ -1,6 +1,7 @@
 from typing import Dict, List
 
 import simple_icd_10 as icd
+import torch
 from typing_extensions import TypedDict
 
 Article = TypedDict(
@@ -46,6 +47,15 @@ def get_relevant_data(data: Dict) -> List[Article]:
             )
         )
     return relevant_data
+
+
+def get_device() -> str:
+    if torch.cuda.is_available():
+        return "cuda"
+    elif torch.has_mps:
+        return "mps"
+    else:
+        return "cpu"
 
 
 if __name__ == "__main__":
