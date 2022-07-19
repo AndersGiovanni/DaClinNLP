@@ -2,12 +2,14 @@ import json
 from typing import Dict, List
 
 import torch
-from torch.utils.data import Dataset, DataLoader
+import transformers
+from torch.utils.data import DataLoader, Dataset
+from tqdm import tqdm
+from transformers import AutoTokenizer
+
 from src.baseline.dataclass import Sundhed
 from src.config import DATA_DIR
-from src.utils import Article, get_relevant_data
-from transformers import AutoTokenizer
-import transformers
+from src.utils import Article, get_device, get_relevant_data
 
 
 class ICDBert(torch.nn.Module):
@@ -16,21 +18,25 @@ class ICDBert(torch.nn.Module):
         self.model = transformers.AutoModel.from_pretrained(model_name)
         self.chapter = torch.nn.Sequential(
             torch.nn.Dropout(0.3),
-            torch.nn.Linear(self.model.config.hidden_size, out_features=n_chapters),
+            torch.nn.Linear(in_features=self.model.config.dim, out_features=n_chapters),
         )
         self.block = torch.nn.Sequential(
             torch.nn.Dropout(0.3),
-            torch.nn.Linear(self.model.config.hidden_size, out_features=n_blocks),
+            torch.nn.Linear(in_features=self.model.config.dim, out_features=n_blocks),
         )
+        self.sigmoid = torch.nn.Sigmoid()
 
     def forward(self, input_ids, attention_mask):
 
         # Get the hidden states from the encoder.
-        _, lm_features = self.model(input_ids=input_ids, attention_mask=attention_mask)
+        last_hidden_state = self.model(
+            input_ids=input_ids, attention_mask=attention_mask
+        ).last_hidden_state  # (batch_size, sequence_length, hidden_size)
+        pooled_output = last_hidden_state[:, 0]  # (batch_size, hidden_size)
 
         return {
-            "chapters": self.chapter(lm_features),
-            "blocks": self.block(lm_features),
+            "chapters": self.sigmoid(self.chapter(pooled_output)),
+            "blocks": self.sigmoid(self.block(pooled_output)),
         }
 
 
@@ -38,35 +44,36 @@ def criterion(loss_function, outputs, articles, device) -> float:
     loss = 0.0
     for label, output in outputs.items():
         loss += loss_function(output, articles[label].to(device))
-    return loss / len(outputs)
+    return loss
 
 
-def training(model, train_loader, val_loader, device, epochs, lr_rate, weight_decay):
+# def training(model, train_loader, device, epochs, lr_rate, weight_decay):
+def training(args, model, device, train_loader, optimizer, epoch):
 
-    losses = []
-    checkpoint_losses = []
-    optimizer = torch.optim.Adam(
-        model.parameters(), lr=lr_rate, weight_decay=weight_decay
-    )
+    # cast model to device
+    model = model.to(device)
+
     loss_function = torch.nn.BCELoss()
 
-    n_total_steps = len(train_loader) * epochs
+    model.train()
 
-    for epoch in range(epochs):
-        model.train()
-        for i, batch in enumerate(train_loader):
-            # cast to device
-            batch = {k: v.to(device) for k, v in batch.items()}
-            # forward pass
-            outputs = model(**batch)
-            # compute loss
-            loss = criterion(loss_function, outputs, batch, device)
-            # append loss to list
-            losses.append(loss.item())
-            # backward pass
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
+    for i, batch in tqdm(enumerate(train_loader), total=len(train_loader)):
+        # get input and labels and cast to device
+        batch_input = {
+            k: batch[k].to(device) for k in ["input_ids", "attention_mask"]
+        }
+        batch_labels = {k: batch[k].to(device) for k in ["chapters", "blocks"]}
+        # forward pass
+        outputs = model(
+            **batch_input
+        )  # each ouput is size (batch_size, hidden_size, n_chapters) -> (16, 512, 21) for chapters
+        # compute loss
+        loss = criterion(loss_function, outputs, batch_labels, device)
+
+        # backward pass
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
 
             if (i + 1) % (int(n_total_steps / 1)) == 0:
                 checkpoint_loss = torch.tensor(losses).mean().item()
@@ -84,7 +91,7 @@ if __name__ == "__main__":
         data: Dict = json.load(f)[0]
 
     # Get relevant data
-    data: List[Article] = get_relevant_data(data)
+    data: List[Article] = get_relevant_data(data)[:100]
 
     # Define tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -121,7 +128,7 @@ if __name__ == "__main__":
     test_loader: DataLoader = DataLoader(test_set, batch_size=8, shuffle=True)
 
     training_config = {
-        "epochs": 10,
+        "epochs": 3,
         "lr_rate": 1e-5,
         "weight_decay": 0.1,
     }
@@ -131,14 +138,21 @@ if __name__ == "__main__":
         model_name, n_chapters=dataset.n_chapters, n_blocks=dataset.n_blocks
     )
 
+    # Create optimizer
+    optimizer = torch.optim.Adam(
+        model.parameters(),
+        lr=training_config["lr_rate"],
+        weight_decay=training_config["weight_decay"],
+    )
+
     # get device
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device(get_device())
+    print(f"Using device: {device}")
 
     # Train model
     training(
         model,
         train_loader,
-        val_loader,
         device=device,
         **training_config,
     )
