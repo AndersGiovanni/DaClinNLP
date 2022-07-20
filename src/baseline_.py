@@ -265,7 +265,7 @@ if __name__ == "__main__":
         data: Dict = json.load(f)[0]
 
     # Get relevant data
-    data: List[Article] = get_relevant_data(data)[:50]
+    data: List[Article] = get_relevant_data(data)
 
     # Define tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_name)
