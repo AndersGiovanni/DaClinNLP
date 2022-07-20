@@ -6,6 +6,9 @@ from src.config import DATA_DIR
 from src.utils import Article
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer
+import simple_icd_10 as icd
+
+torch.manual_seed(42)
 
 
 class Sundhed(Dataset):
@@ -30,26 +33,48 @@ class Sundhed(Dataset):
 
     def _make_translation_dicts_onehot(self) -> None:
         """Convert from str to int and back"""
-        chapters = list(
-            set([item for sublist in self.data for item in sublist["chapters"]])
+        # making sure we always have the same order
+        self.unique_chapters = sorted(
+            list(set([item for sublist in self.data for item in sublist["chapters"]]))
         )
 
-        blocks = list(
-            set([item for sublist in self.data for item in sublist["blocks"]])
+        self.unique_blocks = sorted(
+            list(set([item for sublist in self.data for item in sublist["blocks"]]))
         )
-        categories = list(
-            set([item for sublist in self.data for item in sublist["categories"]])
+        self.unique_categories = sorted(
+            list(set([item for sublist in self.data for item in sublist["categories"]]))
         )
 
         # save count of chapters, blocks and categories
-        self.n_chapters = len(chapters)
-        self.n_blocks = len(blocks)
-        self.n_categories = len(categories)
+        self.n_chapters = len(self.unique_chapters)
+        self.n_blocks = len(self.unique_blocks)
+        self.n_categories = len(self.unique_categories)
+
+        blocks_in_chapters: List[List[int]] = [
+            icd.get_children(chapter) for chapter in self.unique_chapters
+        ]
+        pruned_blocks_in_chapters: List[int] = []
+        for chapter_blocks in blocks_in_chapters:
+            chapter_blocks_in_dataset = [
+                value for value in chapter_blocks if value in self.unique_blocks
+            ]
+            pruned_blocks_in_chapters.append(chapter_blocks_in_dataset)
+        flattend_pruned_blocks_in_chapters = [
+            value for sublist in pruned_blocks_in_chapters for value in sublist
+        ]
+
+        self.pruned_blocks_in_chapters = pruned_blocks_in_chapters
 
         # save the mappings
-        self.chapter_to_int = {chapter: i for i, chapter in enumerate(chapters)}
-        self.block_to_int = {block: i for i, block in enumerate(blocks)}
-        self.category_to_int = {category: i for i, category in enumerate(categories)}
+        self.chapter_to_int = {
+            chapter: i for i, chapter in enumerate(self.unique_chapters)
+        }
+        self.block_to_int = {
+            block: i for i, block in enumerate(flattend_pruned_blocks_in_chapters)
+        }  # this is just to make sure I have the right order in the blocks
+        self.category_to_int = {
+            category: i for i, category in enumerate(self.unique_categories)
+        }
         self.int_to_chapter = {i: chapter for chapter, i in self.chapter_to_int.items()}
         self.int_to_block = {i: block for block, i in self.block_to_int.items()}
         self.int_to_category = {
