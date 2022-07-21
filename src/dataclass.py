@@ -2,8 +2,8 @@ import json
 from typing import Dict, List
 
 import torch
-from src.config import DATA_DIR
-from src.utils import Article
+from config import DATA_DIR
+from utils import Article
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer
 import simple_icd_10 as icd

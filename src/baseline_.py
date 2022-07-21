@@ -13,9 +13,9 @@ from tqdm import tqdm
 from transformers import AutoTokenizer
 from sklearn.metrics import precision_score, recall_score, f1_score
 
-from src.baseline.dataclass import Sundhed
-from src.config import DATA_DIR
-from src.utils import Article, get_device, get_relevant_data
+from dataclass import Sundhed
+from config import DATA_DIR
+from utils import Article, get_device, get_relevant_data
 
 logging.propagate = False
 logging.getLogger().setLevel(logging.ERROR)
@@ -245,9 +245,9 @@ if __name__ == "__main__":
     config = wandb.config  # Initialize config
     config.batch_size = 16  # input batch size for training (default: 64)
     config.test_batch_size = 8  # input batch size for testing (default: 1000)
-    config.epochs = 3  # number of epochs to train (default: 10)
+    config.epochs = 1  # number of epochs to train (default: 10)
     config.lr = 1e-5  # learning rate (default: 0.01)
-    config.weight_decay = 0.0  # weight decay (default: 0.0)
+    config.weight_decay = 0.1  # weight decay (default: 0.0)
     # config.momentum = 0.1  # SGD momentum (default: 0.5)
     config.no_cuda = True  # disables CUDA training
     config.seed = 42  # random seed (default: 42)
@@ -265,7 +265,7 @@ if __name__ == "__main__":
         data: Dict = json.load(f)[0]
 
     # Get relevant data
-    data: List[Article] = get_relevant_data(data)
+    data: List[Article] = get_relevant_data(data)[:40]
 
     # Define tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -299,9 +299,15 @@ if __name__ == "__main__":
     )
 
     # Create dataloaders
-    train_loader: DataLoader = DataLoader(train_set, batch_size=5, shuffle=True)
-    val_loader: DataLoader = DataLoader(val_set, batch_size=2, shuffle=True)
-    test_loader: DataLoader = DataLoader(test_set, batch_size=2, shuffle=True)
+    train_loader: DataLoader = DataLoader(
+        train_set, batch_size=config["batch_size"], shuffle=True
+    )
+    val_loader: DataLoader = DataLoader(
+        val_set, batch_size=config["test_batch_size"], shuffle=True
+    )
+    test_loader: DataLoader = DataLoader(
+        test_set, batch_size=config["test_batch_size"], shuffle=True
+    )
 
     # Create model
     model = ICDBert(
