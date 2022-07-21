@@ -249,7 +249,7 @@ if __name__ == "__main__":
     config.lr = 1e-5  # learning rate (default: 0.01)
     config.weight_decay = 0.1  # weight decay (default: 0.0)
     # config.momentum = 0.1  # SGD momentum (default: 0.5)
-    config.no_cuda = True  # disables CUDA training
+    config.no_cuda = False  # disables CUDA training
     config.seed = 42  # random seed (default: 42)
     config.log_interval = 5  # how many batches to wait before logging training status
 
@@ -326,7 +326,6 @@ if __name__ == "__main__":
 
     # get device
     device = torch.device(get_device())
-    device = torch.device("cpu")
     print(f"Using device: {device}")
 
     # WandB – wandb.watch() automatically fetches all layer dimensions, gradients, model parameters and logs them automatically to your dashboard.
