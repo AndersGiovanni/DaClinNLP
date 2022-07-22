@@ -120,10 +120,10 @@ class ICDBert(torch.nn.Module):
 
 
 def criterion(loss_function, outputs, articles, device) -> float:
-    loss = torch.tensor(0.0).to(device)
+    loss = 0.0
     # accumulate loss for both chapters and blocks
     for label, output in outputs.items():
-        loss += loss_function(output, articles[label].to(device))
+        loss += loss_function(output.to(device), articles[label].to(device))
     return loss
 
 
@@ -245,7 +245,7 @@ if __name__ == "__main__":
     config = wandb.config  # Initialize config
     config.batch_size = 16  # input batch size for training (default: 64)
     config.test_batch_size = 8  # input batch size for testing (default: 1000)
-    config.epochs = 1  # number of epochs to train (default: 10)
+    config.epochs = 20  # number of epochs to train (default: 10)
     config.lr = 1e-5  # learning rate (default: 0.01)
     config.weight_decay = 0.1  # weight decay (default: 0.0)
     # config.momentum = 0.1  # SGD momentum (default: 0.5)
@@ -278,7 +278,7 @@ if __name__ == "__main__":
 
     # Select which fields to use
     text_fields_to_use = ["title", "description", "body"]
-    dataset._tokenize_data(["title"])
+    dataset._tokenize_data(text_fields_to_use)
 
     # Make train test split
     train_pct: float = 0.8
