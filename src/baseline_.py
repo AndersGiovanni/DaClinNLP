@@ -172,67 +172,91 @@ def test(args: str, model: torch.nn.Module, device, test_loader):
             batch_input = {
                 k: batch[k].to(device) for k in ["input_ids", "attention_mask"]
             }
-            batch_labels = {k: batch[k].to(device) for k in ["chapters", "blocks"]}
+            batch_labels = {
+                k: batch[k].to(device) for k in ["chapters", "blocks"]
+            }  # , "blocks"]}
             outputs = model(**batch_input)
             test_loss += criterion(torch.nn.BCELoss(), outputs, batch_labels, device)
             for label, output in outputs.items():
                 output = output > 0.5
-                (
-                    predictions_and_labels[label + "_preds"]
-                    + output.cpu().flatten().tolist()
+                predictions_and_labels[label + "_preds"] += (
+                    output.cpu().flatten().tolist()
                 )
-                (
-                    predictions_and_labels[label + "_labels"]
-                    + batch_labels[label].cpu().flatten().tolist()
+                predictions_and_labels[label + "_labels"] += (
+                    batch_labels[label].cpu().flatten().tolist()
                 )
 
-    wandb.log(
-        {
-            f"{args} loss": test_loss / len(test_loader.dataset),
-            f"{args} Precision chapters": precision_score(
-                predictions_and_labels["chapters_preds"],
-                predictions_and_labels["chapters_labels"],
-            ),
-            f"{args} Recall chapters": recall_score(
-                predictions_and_labels["chapters_preds"],
-                predictions_and_labels["chapters_labels"],
-            ),
-            f"{args} F1 chapters": f1_score(
-                predictions_and_labels["chapters_preds"],
-                predictions_and_labels["chapters_labels"],
-            ),
-            f"{args} Precision blocks": precision_score(
-                predictions_and_labels["blocks_preds"],
-                predictions_and_labels["blocks_labels"],
-            ),
-            f"{args} Recall blocks": recall_score(
-                predictions_and_labels["blocks_preds"],
-                predictions_and_labels["blocks_labels"],
-            ),
-            f"{args} F1 blocks": f1_score(
-                predictions_and_labels["blocks_preds"],
-                predictions_and_labels["blocks_labels"],
-            ),
-            f"{args} Flat total precision": precision_score(
-                predictions_and_labels["chapters_preds"]
-                + predictions_and_labels["blocks_preds"],
-                predictions_and_labels["chapters_labels"]
-                + predictions_and_labels["blocks_labels"],
-            ),
-            f"{args} Flat total recall": recall_score(
-                predictions_and_labels["chapters_preds"]
-                + predictions_and_labels["blocks_preds"],
-                predictions_and_labels["chapters_labels"]
-                + predictions_and_labels["blocks_labels"],
-            ),
-            f"{args} Flat total F1": f1_score(
-                predictions_and_labels["chapters_preds"]
-                + predictions_and_labels["blocks_preds"],
-                predictions_and_labels["chapters_labels"]
-                + predictions_and_labels["blocks_labels"],
-            ),
-        }
+    precision_chapters = precision_score(
+        y_true=predictions_and_labels["chapters_labels"],
+        y_pred=predictions_and_labels["chapters_preds"],
     )
+    recall_chapters = recall_score(
+        y_true=predictions_and_labels["chapters_labels"],
+        y_pred=predictions_and_labels["chapters_preds"],
+    )
+    f1_chapters = f1_score(
+        y_true=predictions_and_labels["chapters_labels"],
+        y_pred=predictions_and_labels["chapters_preds"],
+    )
+    precision_blocks = precision_score(
+        y_true=predictions_and_labels["blocks_labels"],
+        y_pred=predictions_and_labels["blocks_preds"],
+    )
+    recall_blocks = recall_score(
+        y_true=predictions_and_labels["blocks_labels"],
+        y_pred=predictions_and_labels["blocks_preds"],
+    )
+    f1_blocks = f1_score(
+        y_true=predictions_and_labels["blocks_labels"],
+        y_pred=predictions_and_labels["blocks_preds"],
+    )
+    precision_flat = precision_score(
+        y_true=predictions_and_labels["chapters_labels"]
+        + predictions_and_labels["blocks_labels"],
+        y_pred=predictions_and_labels["chapters_preds"]
+        + predictions_and_labels["blocks_preds"],
+    )
+    recall_flat = recall_score(
+        y_true=predictions_and_labels["chapters_labels"]
+        + predictions_and_labels["blocks_labels"],
+        y_pred=predictions_and_labels["chapters_preds"]
+        + predictions_and_labels["blocks_preds"],
+    )
+    f1_flat = f1_score(
+        y_true=predictions_and_labels["chapters_labels"]
+        + predictions_and_labels["blocks_labels"],
+        y_pred=predictions_and_labels["chapters_preds"]
+        + predictions_and_labels["blocks_preds"],
+    )
+    test_loss /= len(test_loader.dataset)
+
+    if args == "Test":
+        wandb.summary["Test loss"] = test_loss / len(test_loader.dataset)
+        wandb.summary["Precision chapters"] = precision_chapters
+        wandb.summary["Recall chapters"] = recall_chapters
+        wandb.summary["F1 chapters"] = f1_chapters
+        wandb.summary["Precision blocks"] = precision_blocks
+        wandb.summary["Recall blocks"] = recall_blocks
+        wandb.summary["F1 blocks"] = f1_blocks
+        wandb.summary["Precision flat"] = precision_flat
+        wandb.summary["Recall flat"] = recall_flat
+        wandb.summary["F1 flat"] = f1_flat
+
+    else:
+        wandb.log(
+            {
+                f"{args} loss": test_loss / len(test_loader.dataset),
+                f"{args} Precision chapters": precision_chapters,
+                f"{args} Recall chapters": recall_chapters,
+                f"{args} F1 chapters": f1_chapters,
+                f"{args} Precision blocks": precision_blocks,
+                f"{args} Recall blocks": recall_blocks,
+                f"{args} F1 blocks": f1_blocks,
+                f"{args} Flat total precision": precision_flat,
+                f"{args} Flat total recall": recall_flat,
+                f"{args} Flat total F1": f1_flat,
+            }
+        )
 
 
 if __name__ == "__main__":
@@ -245,13 +269,13 @@ if __name__ == "__main__":
     config = wandb.config  # Initialize config
     config.batch_size = 16  # input batch size for training (default: 64)
     config.test_batch_size = 8  # input batch size for testing (default: 1000)
-    config.epochs = 20  # number of epochs to train (default: 10)
+    config.epochs = 10  # number of epochs to train (default: 10)
     config.lr = 1e-5  # learning rate (default: 0.01)
     config.weight_decay = 0.1  # weight decay (default: 0.0)
     # config.momentum = 0.1  # SGD momentum (default: 0.5)
     config.no_cuda = False  # disables CUDA training
     config.seed = 42  # random seed (default: 42)
-    config.log_interval = 5  # how many batches to wait before logging training status
+    config.log_interval = 2  # how many batches to wait before logging training status
 
     # Set random seeds and deterministic pytorch for reproducibility
     # random.seed(config.seed)       # python random seed
@@ -318,19 +342,20 @@ if __name__ == "__main__":
     )
 
     # Create optimizer
-    optimizer = torch.optim.Adam(
+    optimizer = torch.optim.AdamW(
         model.parameters(),
         lr=config["lr"],
-        weight_decay=config["weight_decay"],
+        #  weight_decay=config["weight_decay"],
     )
 
     # get device
     device = torch.device(get_device())
+    # device = torch.device("cpu")
     print(f"Using device: {device}")
 
     # WandB – wandb.watch() automatically fetches all layer dimensions, gradients, model parameters and logs them automatically to your dashboard.
     # Using log="all" log histograms of parameter values in addition to gradients
-    wandb.watch(model, log="all", log_graph=True, log_freq=5)
+    wandb.watch(model, log="all", log_graph=True, log_freq=2)
 
     # Training loop
     for epoch in range(1, config["epochs"] + 1):
