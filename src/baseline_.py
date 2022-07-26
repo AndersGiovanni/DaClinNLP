@@ -267,9 +267,9 @@ if __name__ == "__main__":
 
     # WandB – Config is a variable that holds and saves hyperparameters and inputs
     config = wandb.config  # Initialize config
-    config.batch_size = 16  # input batch size for training (default: 64)
-    config.test_batch_size = 8  # input batch size for testing (default: 1000)
-    config.epochs = 10  # number of epochs to train (default: 10)
+    config.batch_size = 32  # input batch size for training (default: 64)
+    config.test_batch_size = 16  # input batch size for testing (default: 1000)
+    config.epochs = 50  # number of epochs to train (default: 10)
     config.lr = 1e-5  # learning rate (default: 0.01)
     config.weight_decay = 0.1  # weight decay (default: 0.0)
     # config.momentum = 0.1  # SGD momentum (default: 0.5)
