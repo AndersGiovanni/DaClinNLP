@@ -58,5 +58,19 @@ def get_device() -> str:
         return "cpu"
 
 
+def convert_results_from_int_to_string(results: Dict, dataset) -> List[Dict]:
+    """Convert the results from int to string. The dataset is only for the conversion. Ugly piece of code, sorry."""
+    output = []
+    for article_id, article_results in results.items():
+        results_object = {"id_": article_id}
+        for result_id, result in article_results.items():
+            if "chapters" in result_id:
+                results_object[result_id] = [dataset.int_to_chapter[i] for i in result]
+            else:
+                results_object[result_id] = [dataset.int_to_block[i] for i in result]
+        output.append(results_object)
+    return output
+
+
 if __name__ == "__main__":
     pass
