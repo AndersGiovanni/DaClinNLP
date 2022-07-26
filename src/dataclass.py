@@ -16,6 +16,7 @@ class Sundhed(Dataset):
         super().__init__()
         self.data = data
         self.tokenizer = tokenizer
+        self.article_ids = [article["id_"] for article in self.data]
         self._make_translation_dicts_onehot()
         self._prepare_labels()
 
@@ -25,6 +26,7 @@ class Sundhed(Dataset):
         sample["chapters"] = self.chapters[index]
         sample["blocks"] = self.blocks[index]
         sample["categories"] = self.categories[index]
+        sample["article_ids"] = self.article_ids[index]
 
         return sample
 
