@@ -15,7 +15,12 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 
 from dataclass import Sundhed
 from config import DATA_DIR
-from utils import Article, get_device, get_relevant_data
+from utils import (
+    Article,
+    get_device,
+    get_relevant_data,
+    convert_results_from_int_to_string,
+)
 
 logging.propagate = False
 logging.getLogger().setLevel(logging.ERROR)
@@ -167,6 +172,7 @@ def test(args: str, model: torch.nn.Module, device, test_loader):
         "chapters_labels": [],
         "blocks_labels": [],
     }
+    test_output: List[Dict] = {}  # For saving test predictions
     with torch.no_grad():
         for batch in test_loader:
             batch_input = {
@@ -175,9 +181,20 @@ def test(args: str, model: torch.nn.Module, device, test_loader):
             batch_labels = {
                 k: batch[k].to(device) for k in ["chapters", "blocks"]
             }  # , "blocks"]}
+            batch_ids = [article_id for article_id in batch["article_ids"]]
             outputs = model(**batch_input)
             test_loss += criterion(torch.nn.BCELoss(), outputs, batch_labels, device)
-            for label, output in outputs.items():
+
+            # saving predictions
+            for article_id in batch_ids:
+                test_output[article_id] = {
+                    "chapters_preds": [],
+                    "blocks_preds": [],
+                    "chapters_labels": [],
+                    "blocks_labels": [],
+                }
+
+            for idx, (label, output) in enumerate(outputs.items()):
                 output = output > 0.5
                 predictions_and_labels[label + "_preds"] += (
                     output.cpu().flatten().tolist()
@@ -185,6 +202,17 @@ def test(args: str, model: torch.nn.Module, device, test_loader):
                 predictions_and_labels[label + "_labels"] += (
                     batch_labels[label].cpu().flatten().tolist()
                 )
+                # saving predictions (not pretty, I know... but it works)
+                for prediction in (output == True).nonzero().tolist():
+                    article_idx, pred = prediction
+                    test_output[batch_ids[article_idx]][label + "_preds"].append(pred)
+                for idx_and_true_label in (
+                    (batch_labels[label] == True).nonzero().tolist()
+                ):
+                    article_idx, true_label = idx_and_true_label
+                    test_output[batch_ids[article_idx]][label + "_labels"].append(
+                        true_label
+                    )
 
     precision_chapters = precision_score(
         y_true=predictions_and_labels["chapters_labels"],
@@ -230,33 +258,23 @@ def test(args: str, model: torch.nn.Module, device, test_loader):
     )
     test_loss /= len(test_loader.dataset)
 
-    if args == "Test":
-        wandb.summary["Test loss"] = test_loss / len(test_loader.dataset)
-        wandb.summary["Precision chapters"] = precision_chapters
-        wandb.summary["Recall chapters"] = recall_chapters
-        wandb.summary["F1 chapters"] = f1_chapters
-        wandb.summary["Precision blocks"] = precision_blocks
-        wandb.summary["Recall blocks"] = recall_blocks
-        wandb.summary["F1 blocks"] = f1_blocks
-        wandb.summary["Precision flat"] = precision_flat
-        wandb.summary["Recall flat"] = recall_flat
-        wandb.summary["F1 flat"] = f1_flat
+    wandb.log(
+        {
+            f"{args} loss": test_loss,
+            f"{args} Precision chapters": precision_chapters,
+            f"{args} Recall chapters": recall_chapters,
+            f"{args} F1 chapters": f1_chapters,
+            f"{args} Precision blocks": precision_blocks,
+            f"{args} Recall blocks": recall_blocks,
+            f"{args} F1 blocks": f1_blocks,
+            f"{args} Flat total precision": precision_flat,
+            f"{args} Flat total recall": recall_flat,
+            f"{args} Flat total F1": f1_flat,
+        }
+    )
 
-    else:
-        wandb.log(
-            {
-                f"{args} loss": test_loss / len(test_loader.dataset),
-                f"{args} Precision chapters": precision_chapters,
-                f"{args} Recall chapters": recall_chapters,
-                f"{args} F1 chapters": f1_chapters,
-                f"{args} Precision blocks": precision_blocks,
-                f"{args} Recall blocks": recall_blocks,
-                f"{args} F1 blocks": f1_blocks,
-                f"{args} Flat total precision": precision_flat,
-                f"{args} Flat total recall": recall_flat,
-                f"{args} Flat total F1": f1_flat,
-            }
-        )
+    if args == "Test":
+        return test_output
 
 
 if __name__ == "__main__":
@@ -267,8 +285,8 @@ if __name__ == "__main__":
 
     # WandB – Config is a variable that holds and saves hyperparameters and inputs
     config = wandb.config  # Initialize config
-    config.batch_size = 32  # input batch size for training (default: 64)
-    config.test_batch_size = 16  # input batch size for testing (default: 1000)
+    config.batch_size = 16  # input batch size for training (default: 64)
+    config.test_batch_size = 8  # input batch size for testing (default: 1000)
     config.epochs = 50  # number of epochs to train (default: 10)
     config.lr = 1e-5  # learning rate (default: 0.01)
     config.weight_decay = 0.1  # weight decay (default: 0.0)
@@ -330,7 +348,7 @@ if __name__ == "__main__":
         val_set, batch_size=config["test_batch_size"], shuffle=True
     )
     test_loader: DataLoader = DataLoader(
-        test_set, batch_size=config["test_batch_size"], shuffle=True
+        test_set, batch_size=config["test_batch_size"], shuffle=False
     )
 
     # Create model
@@ -363,7 +381,12 @@ if __name__ == "__main__":
         test("Val", model, device, val_loader)
 
     # Test
-    test("Test", model, device, test_loader)
+    test_results = test("Test", model, device, test_loader)
+    # convert from int to chapters and blocks. This is only for evaluation and presentation purposes.
+    results = convert_results_from_int_to_string(test_results, dataset)
+    # save to json file
+    with open("test_predictions.json", "w") as f:
+        json.dump(results, f, indent=4)
 
     # Save model
     wandb.save("model.h5")
