@@ -1,0 +1,3930 @@
+[
+    {
+        "id_": "24701",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [
+            "K55-K64"
+        ],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K90-K93"
+        ]
+    },
+    {
+        "id_": "27703",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F20-F29",
+            "F60-F69"
+        ]
+    },
+    {
+        "id_": "22070",
+        "chapters_preds": [
+            "XVIII"
+        ],
+        "blocks_preds": [
+            "R00-R09"
+        ],
+        "chapters_labels": [
+            "XVI",
+            "XVII"
+        ],
+        "blocks_labels": [
+            "P20-P29",
+            "Q20-Q28"
+        ]
+    },
+    {
+        "id_": "15333",
+        "chapters_preds": [
+            "X",
+            "XXI"
+        ],
+        "blocks_preds": [
+            "J40-J47",
+            "Z80-Z99"
+        ],
+        "chapters_labels": [
+            "X",
+            "XXI"
+        ],
+        "blocks_labels": [
+            "J40-J47",
+            "Z80-Z99"
+        ]
+    },
+    {
+        "id_": "15194",
+        "chapters_preds": [
+            "XXI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V",
+            "XXI"
+        ],
+        "blocks_labels": [
+            "F50-F59",
+            "Z55-Z65",
+            "Z70-Z76"
+        ]
+    },
+    {
+        "id_": "13105",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I20-I25"
+        ],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I20-I25"
+        ]
+    },
+    {
+        "id_": "16205",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VII"
+        ],
+        "blocks_labels": [
+            "H53-H54"
+        ]
+    },
+    {
+        "id_": "32272",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI",
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "K70-K77",
+            "R10-R19",
+            "R50-R69"
+        ]
+    },
+    {
+        "id_": "16165",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "T20-T32"
+        ]
+    },
+    {
+        "id_": "24244",
+        "chapters_preds": [
+            "XVIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV"
+        ],
+        "blocks_labels": [
+            "N30-N39"
+        ]
+    },
+    {
+        "id_": "16517",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F40-F48"
+        ]
+    },
+    {
+        "id_": "16564",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F90-F98"
+        ]
+    },
+    {
+        "id_": "26022",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VII"
+        ],
+        "blocks_labels": [
+            "H30-H36"
+        ]
+    },
+    {
+        "id_": "24729",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E70-E90"
+        ]
+    },
+    {
+        "id_": "24284",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV"
+        ],
+        "blocks_labels": [
+            "N40-N51"
+        ]
+    },
+    {
+        "id_": "11963",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "T36-T50",
+            "T51-T65"
+        ]
+    },
+    {
+        "id_": "13366",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E20-E35"
+        ]
+    },
+    {
+        "id_": "22749",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E70-E90"
+        ]
+    },
+    {
+        "id_": "15786",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I",
+            "XIX"
+        ],
+        "blocks_labels": [
+            "A00-A09",
+            "T51-T65"
+        ]
+    },
+    {
+        "id_": "82312",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [
+            "Q80-Q89"
+        ],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q65-Q79"
+        ]
+    },
+    {
+        "id_": "76532",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [
+            "Q80-Q89"
+        ],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q80-Q89"
+        ]
+    },
+    {
+        "id_": "16594",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V",
+            "VI"
+        ],
+        "blocks_labels": [
+            "F90-F98",
+            "G20-G26"
+        ]
+    },
+    {
+        "id_": "87443",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [
+            "E70-E90"
+        ],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G10-G14"
+        ]
+    },
+    {
+        "id_": "84708",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [
+            "Q65-Q79"
+        ],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q65-Q79"
+        ]
+    },
+    {
+        "id_": "32177",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L80-L99"
+        ]
+    },
+    {
+        "id_": "19497",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "T20-T32"
+        ]
+    },
+    {
+        "id_": "84840",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [
+            "Q80-Q89"
+        ],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q80-Q89"
+        ]
+    },
+    {
+        "id_": "54766",
+        "chapters_preds": [
+            "VI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G40-G47"
+        ]
+    },
+    {
+        "id_": "14542",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M60-M79"
+        ]
+    },
+    {
+        "id_": "25535",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV",
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "N00-N08",
+            "N10-N16",
+            "N30-N39",
+            "R80-R82"
+        ]
+    },
+    {
+        "id_": "49138",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S30-S39",
+            "S70-S79"
+        ]
+    },
+    {
+        "id_": "32194",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV",
+            "XIII"
+        ],
+        "blocks_labels": [
+            "E10-E14",
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "22067",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I80-I89"
+        ]
+    },
+    {
+        "id_": "15509",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [
+            "N40-N51"
+        ],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R10-R19"
+        ]
+    },
+    {
+        "id_": "25270",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI",
+            "XIII"
+        ],
+        "blocks_labels": [
+            "G50-G59",
+            "M40-M54"
+        ]
+    },
+    {
+        "id_": "14550",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S80-S89"
+        ]
+    },
+    {
+        "id_": "20621",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [
+            "E70-E90"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E65-E68"
+        ]
+    },
+    {
+        "id_": "21614",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V",
+            "XIV"
+        ],
+        "blocks_labels": [
+            "F50-F59",
+            "N80-N98"
+        ]
+    },
+    {
+        "id_": "32191",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "D10-D36"
+        ]
+    },
+    {
+        "id_": "11885",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V",
+            "VI"
+        ],
+        "blocks_labels": [
+            "F00-F09",
+            "G30-G32"
+        ]
+    },
+    {
+        "id_": "13851",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L55-L59"
+        ]
+    },
+    {
+        "id_": "12690",
+        "chapters_preds": [
+            "VI"
+        ],
+        "blocks_preds": [
+            "G40-G47"
+        ],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G40-G47"
+        ]
+    },
+    {
+        "id_": "12314",
+        "chapters_preds": [
+            "III"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "II",
+            "III",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "D37-D48",
+            "D70-D77",
+            "P50-P61"
+        ]
+    },
+    {
+        "id_": "14806",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A50-A64"
+        ]
+    },
+    {
+        "id_": "30997",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M00-M25"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25",
+            "M30-M36"
+        ]
+    },
+    {
+        "id_": "25263",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R25-R29"
+        ]
+    },
+    {
+        "id_": "87140",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q80-Q89"
+        ]
+    },
+    {
+        "id_": "16033",
+        "chapters_preds": [
+            "XVIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV"
+        ],
+        "blocks_labels": [
+            "N30-N39"
+        ]
+    },
+    {
+        "id_": "44059",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q30-Q34"
+        ]
+    },
+    {
+        "id_": "27038",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M95-M99"
+        ]
+    },
+    {
+        "id_": "12739",
+        "chapters_preds": [
+            "VI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G35-G37"
+        ]
+    },
+    {
+        "id_": "15205",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "II",
+            "XIV"
+        ],
+        "blocks_labels": [
+            "D10-D36",
+            "N60-N64"
+        ]
+    },
+    {
+        "id_": "33692",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "C00-C97"
+        ]
+    },
+    {
+        "id_": "23106",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A30-A49"
+        ]
+    },
+    {
+        "id_": "24251",
+        "chapters_preds": [
+            "XVIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R30-R39"
+        ]
+    },
+    {
+        "id_": "15752",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [
+            "B15-B19"
+        ],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "B15-B19"
+        ]
+    },
+    {
+        "id_": "22097",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I30-I52"
+        ],
+        "chapters_labels": [
+            "I",
+            "IX",
+            "XIII"
+        ],
+        "blocks_labels": [
+            "A30-A49",
+            "A50-A64",
+            "I00-I02",
+            "I05-I09",
+            "I30-I52",
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "13092",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I20-I25"
+        ],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I20-I25"
+        ]
+    },
+    {
+        "id_": "27007",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M00-M25"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "15822",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K55-K64"
+        ]
+    },
+    {
+        "id_": "16032",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [
+            "N30-N39"
+        ],
+        "chapters_labels": [
+            "XIV"
+        ],
+        "blocks_labels": [
+            "N30-N39"
+        ]
+    },
+    {
+        "id_": "20619",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [
+            "E70-E90"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E20-E35",
+            "E70-E90"
+        ]
+    },
+    {
+        "id_": "24779",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K20-K31"
+        ]
+    },
+    {
+        "id_": "15808",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A00-A09",
+            "B95-B98"
+        ]
+    },
+    {
+        "id_": "15998",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX",
+            "XI",
+            "XIV"
+        ],
+        "blocks_labels": [
+            "I70-I79",
+            "K55-K64",
+            "N25-N29"
+        ]
+    },
+    {
+        "id_": "42447",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F30-F39"
+        ]
+    },
+    {
+        "id_": "32132",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "B85-B89"
+        ]
+    },
+    {
+        "id_": "21346",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [
+            "F40-F48"
+        ],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F30-F39",
+            "F40-F48"
+        ]
+    },
+    {
+        "id_": "32091",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S60-S69"
+        ]
+    },
+    {
+        "id_": "15357",
+        "chapters_preds": [
+            "X"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "X"
+        ],
+        "blocks_labels": [
+            "J40-J47"
+        ]
+    },
+    {
+        "id_": "90086",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q00-Q07"
+        ]
+    },
+    {
+        "id_": "25799",
+        "chapters_preds": [
+            "XV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV"
+        ],
+        "blocks_labels": [
+            "O30-O48"
+        ]
+    },
+    {
+        "id_": "16455",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [
+            "F40-F48"
+        ],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F40-F48"
+        ]
+    },
+    {
+        "id_": "24783",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [
+            "K20-K31"
+        ],
+        "chapters_labels": [
+            "XI",
+            "XVII"
+        ],
+        "blocks_labels": [
+            "K20-K31",
+            "Q38-Q45"
+        ]
+    },
+    {
+        "id_": "27287",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "II",
+            "XII",
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "C00-C97",
+            "L00-L08",
+            "R50-R69"
+        ]
+    },
+    {
+        "id_": "22717",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L00-L08"
+        ]
+    },
+    {
+        "id_": "27460",
+        "chapters_preds": [
+            "XIII",
+            "XVII"
+        ],
+        "blocks_preds": [
+            "M40-M54",
+            "Q65-Q79"
+        ],
+        "chapters_labels": [
+            "XIII",
+            "XVII"
+        ],
+        "blocks_labels": [
+            "M40-M54",
+            "Q65-Q79"
+        ]
+    },
+    {
+        "id_": "13104",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I20-I25"
+        ],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I20-I25"
+        ]
+    },
+    {
+        "id_": "28039",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M30-M36"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M30-M36"
+        ]
+    },
+    {
+        "id_": "82740",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [
+            "Q80-Q89"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E70-E90"
+        ]
+    },
+    {
+        "id_": "22712",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L60-L75"
+        ]
+    },
+    {
+        "id_": "11933",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S00-S09"
+        ]
+    },
+    {
+        "id_": "24765",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "C00-C97"
+        ]
+    },
+    {
+        "id_": "32655",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S50-S59"
+        ]
+    },
+    {
+        "id_": "20618",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E70-E90"
+        ]
+    },
+    {
+        "id_": "24813",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K50-K52",
+            "K55-K64"
+        ]
+    },
+    {
+        "id_": "26395",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VIII"
+        ],
+        "blocks_labels": [
+            "H60-H62"
+        ]
+    },
+    {
+        "id_": "12263",
+        "chapters_preds": [
+            "III"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "III"
+        ],
+        "blocks_labels": [
+            "D50-D53"
+        ]
+    },
+    {
+        "id_": "12273",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "C00-C97"
+        ]
+    },
+    {
+        "id_": "24781",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K20-K31"
+        ]
+    },
+    {
+        "id_": "13702",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L60-L75"
+        ]
+    },
+    {
+        "id_": "15830",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "C00-C97"
+        ]
+    },
+    {
+        "id_": "26010",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VII"
+        ],
+        "blocks_labels": [
+            "H40-H42"
+        ]
+    },
+    {
+        "id_": "32131",
+        "chapters_preds": [
+            "XV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV"
+        ],
+        "blocks_labels": [
+            "O00-O08",
+            "O30-O48"
+        ]
+    },
+    {
+        "id_": "13711",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L20-L30"
+        ]
+    },
+    {
+        "id_": "15334",
+        "chapters_preds": [
+            "X",
+            "XXI"
+        ],
+        "blocks_preds": [
+            "J40-J47",
+            "Z80-Z99"
+        ],
+        "chapters_labels": [
+            "X",
+            "XXI"
+        ],
+        "blocks_labels": [
+            "J40-J47",
+            "Z80-Z99"
+        ]
+    },
+    {
+        "id_": "16583",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [
+            "F50-F59"
+        ],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F50-F59"
+        ]
+    },
+    {
+        "id_": "14524",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M60-M79"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M60-M79"
+        ]
+    },
+    {
+        "id_": "16669",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A80-A89"
+        ]
+    },
+    {
+        "id_": "21327",
+        "chapters_preds": [
+            "XVIII"
+        ],
+        "blocks_preds": [
+            "R50-R69"
+        ],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R25-R29"
+        ]
+    },
+    {
+        "id_": "22679",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "B50-B64"
+        ]
+    },
+    {
+        "id_": "15760",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "B95-B98"
+        ]
+    },
+    {
+        "id_": "20005",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R50-R69",
+            "R70-R79"
+        ]
+    },
+    {
+        "id_": "26331",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I",
+            "XI"
+        ],
+        "blocks_labels": [
+            "B35-B49",
+            "K00-K14"
+        ]
+    },
+    {
+        "id_": "15096",
+        "chapters_preds": [
+            "XV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV"
+        ],
+        "blocks_labels": [
+            "O00-O08"
+        ]
+    },
+    {
+        "id_": "14699",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M60-M79"
+        ]
+    },
+    {
+        "id_": "22121",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I05-I09",
+            "I30-I52"
+        ]
+    },
+    {
+        "id_": "15962",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV"
+        ],
+        "blocks_labels": [
+            "N10-N16"
+        ]
+    },
+    {
+        "id_": "27314",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "B00-B09"
+        ]
+    },
+    {
+        "id_": "14578",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S90-S99"
+        ]
+    },
+    {
+        "id_": "25804",
+        "chapters_preds": [
+            "XV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV"
+        ],
+        "blocks_labels": [
+            "O20-O29"
+        ]
+    },
+    {
+        "id_": "12729",
+        "chapters_preds": [
+            "VI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G40-G47"
+        ]
+    },
+    {
+        "id_": "16345",
+        "chapters_preds": [
+            "X"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "X"
+        ],
+        "blocks_labels": [
+            "J30-J39"
+        ]
+    },
+    {
+        "id_": "26055",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VII"
+        ],
+        "blocks_labels": [
+            "H49-H52"
+        ]
+    },
+    {
+        "id_": "13144",
+        "chapters_preds": [
+            "XVIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R00-R09"
+        ]
+    },
+    {
+        "id_": "14598",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "16465",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F40-F48"
+        ]
+    },
+    {
+        "id_": "87412",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VII"
+        ],
+        "blocks_labels": [
+            "H30-H36"
+        ]
+    },
+    {
+        "id_": "39290",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XXI"
+        ],
+        "blocks_labels": [
+            "Z70-Z76"
+        ]
+    },
+    {
+        "id_": "16514",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F00-F09"
+        ]
+    },
+    {
+        "id_": "28060",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q90-Q99"
+        ]
+    },
+    {
+        "id_": "15166",
+        "chapters_preds": [
+            "XIV",
+            "XVIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV",
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "N80-N98",
+            "R10-R19",
+            "R50-R69"
+        ]
+    },
+    {
+        "id_": "15720",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K80-K87"
+        ]
+    },
+    {
+        "id_": "21002",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M60-M79"
+        ]
+    },
+    {
+        "id_": "15470",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q50-Q56"
+        ]
+    },
+    {
+        "id_": "32551",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V",
+            "XIX"
+        ],
+        "blocks_labels": [
+            "F10-F19",
+            "T51-T65"
+        ]
+    },
+    {
+        "id_": "25200",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G60-G64"
+        ]
+    },
+    {
+        "id_": "13038",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I60-I69"
+        ]
+    },
+    {
+        "id_": "24756",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "B35-B49"
+        ]
+    },
+    {
+        "id_": "12426",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "O85-O92",
+            "P35-P39"
+        ]
+    },
+    {
+        "id_": "16484",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F30-F39"
+        ]
+    },
+    {
+        "id_": "30987",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q65-Q79"
+        ]
+    },
+    {
+        "id_": "23113",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "B65-B83"
+        ]
+    },
+    {
+        "id_": "13086",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX",
+            "XVII"
+        ],
+        "blocks_labels": [
+            "I30-I52",
+            "Q20-Q28"
+        ]
+    },
+    {
+        "id_": "81281",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S60-S69"
+        ]
+    },
+    {
+        "id_": "14662",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M30-M36"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M30-M36"
+        ]
+    },
+    {
+        "id_": "79132",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G60-G64"
+        ]
+    },
+    {
+        "id_": "21200",
+        "chapters_preds": [
+            "XVI",
+            "XVIII"
+        ],
+        "blocks_preds": [
+            "R50-R69"
+        ],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R50-R69"
+        ]
+    },
+    {
+        "id_": "16449",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F20-F29"
+        ]
+    },
+    {
+        "id_": "25223",
+        "chapters_preds": [
+            "VI",
+            "XIX"
+        ],
+        "blocks_preds": [
+            "G50-G59"
+        ],
+        "chapters_labels": [
+            "VI",
+            "XIX"
+        ],
+        "blocks_labels": [
+            "G50-G59",
+            "S40-S49"
+        ]
+    },
+    {
+        "id_": "32188",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L10-L14"
+        ]
+    },
+    {
+        "id_": "25786",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV"
+        ],
+        "blocks_labels": [
+            "O80-O84"
+        ]
+    },
+    {
+        "id_": "21026",
+        "chapters_preds": [
+            "VI",
+            "XIX"
+        ],
+        "blocks_preds": [
+            "G50-G59"
+        ],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S10-S19",
+            "S40-S49"
+        ]
+    },
+    {
+        "id_": "21674",
+        "chapters_preds": [
+            "XIV",
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "II",
+            "XIV"
+        ],
+        "blocks_labels": [
+            "D10-D36",
+            "N80-N98"
+        ]
+    },
+    {
+        "id_": "14624",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "13089",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I30-I52"
+        ],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I05-I09",
+            "I30-I52"
+        ]
+    },
+    {
+        "id_": "13794",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L40-L45"
+        ]
+    },
+    {
+        "id_": "22739",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R50-R69"
+        ]
+    },
+    {
+        "id_": "13306",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M80-M94"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M80-M94"
+        ]
+    },
+    {
+        "id_": "11879",
+        "chapters_preds": [
+            "V",
+            "VI"
+        ],
+        "blocks_preds": [
+            "F00-F09"
+        ],
+        "chapters_labels": [
+            "V",
+            "VI"
+        ],
+        "blocks_labels": [
+            "F00-F09",
+            "G30-G32"
+        ]
+    },
+    {
+        "id_": "26368",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R50-R69"
+        ]
+    },
+    {
+        "id_": "32338",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I30-I52"
+        ],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I10-I15"
+        ]
+    },
+    {
+        "id_": "20629",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [
+            "E70-E90"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E20-E35"
+        ]
+    },
+    {
+        "id_": "24089",
+        "chapters_preds": [
+            "X"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "X"
+        ],
+        "blocks_labels": [
+            "J40-J47"
+        ]
+    },
+    {
+        "id_": "14596",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M00-M25"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "26370",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K00-K14"
+        ]
+    },
+    {
+        "id_": "75698",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q65-Q79"
+        ]
+    },
+    {
+        "id_": "23097",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A75-A79"
+        ]
+    },
+    {
+        "id_": "12066",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E70-E90"
+        ]
+    },
+    {
+        "id_": "15841",
+        "chapters_preds": [
+            "XI",
+            "XVI"
+        ],
+        "blocks_preds": [
+            "K55-K64",
+            "K90-K93"
+        ],
+        "chapters_labels": [
+            "XI",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "K55-K64",
+            "K90-K93",
+            "P50-P61",
+            "P75-P78"
+        ]
+    },
+    {
+        "id_": "27671",
+        "chapters_preds": [
+            "XXI"
+        ],
+        "blocks_preds": [
+            "Z70-Z76"
+        ],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F10-F19"
+        ]
+    },
+    {
+        "id_": "90398",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "C00-C97"
+        ]
+    },
+    {
+        "id_": "13035",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I70-I79"
+        ]
+    },
+    {
+        "id_": "14800",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A50-A64"
+        ]
+    },
+    {
+        "id_": "15788",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [
+            "E70-E90"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E70-E90"
+        ]
+    },
+    {
+        "id_": "16365",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G40-G47"
+        ]
+    },
+    {
+        "id_": "23033",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "B65-B83"
+        ]
+    },
+    {
+        "id_": "24815",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K50-K52"
+        ]
+    },
+    {
+        "id_": "20962",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M00-M25"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "27063",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M60-M79"
+        ]
+    },
+    {
+        "id_": "21334",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "T80-T88"
+        ]
+    },
+    {
+        "id_": "19490",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [
+            "T36-T50"
+        ],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "T36-T50"
+        ]
+    },
+    {
+        "id_": "15757",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K70-K77"
+        ]
+    },
+    {
+        "id_": "20038",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "C00-C97"
+        ]
+    },
+    {
+        "id_": "31593",
+        "chapters_preds": [
+            "XVIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I",
+            "IX",
+            "XII",
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "B20-B24",
+            "I80-I89",
+            "L00-L08",
+            "R50-R69"
+        ]
+    },
+    {
+        "id_": "32144",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV",
+            "XV"
+        ],
+        "blocks_labels": [
+            "N00-N08",
+            "N30-N39",
+            "O10-O16"
+        ]
+    },
+    {
+        "id_": "82826",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S60-S69"
+        ]
+    },
+    {
+        "id_": "16687",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "T66-T78"
+        ]
+    },
+    {
+        "id_": "28097",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [
+            "Q80-Q89"
+        ],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q65-Q79"
+        ]
+    },
+    {
+        "id_": "20043",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "C00-C97"
+        ]
+    },
+    {
+        "id_": "12493",
+        "chapters_preds": [
+            "XV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "A50-A64",
+            "P20-P29"
+        ]
+    },
+    {
+        "id_": "14012",
+        "chapters_preds": [
+            "I",
+            "V",
+            "XXI"
+        ],
+        "blocks_preds": [
+            "B20-B24"
+        ],
+        "chapters_labels": [
+            "I",
+            "V",
+            "XXI"
+        ],
+        "blocks_labels": [
+            "B20-B24",
+            "F00-F09",
+            "Z20-Z29"
+        ]
+    },
+    {
+        "id_": "13262",
+        "chapters_preds": [
+            "IV",
+            "XVIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E10-E14"
+        ]
+    },
+    {
+        "id_": "25226",
+        "chapters_preds": [
+            "VI",
+            "XIX"
+        ],
+        "blocks_preds": [
+            "G50-G59"
+        ],
+        "chapters_labels": [
+            "VI",
+            "XIX"
+        ],
+        "blocks_labels": [
+            "G50-G59",
+            "S70-S79"
+        ]
+    },
+    {
+        "id_": "14571",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S90-S99"
+        ]
+    },
+    {
+        "id_": "15988",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R30-R39"
+        ]
+    },
+    {
+        "id_": "20649",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [
+            "E20-E35"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E20-E35"
+        ]
+    },
+    {
+        "id_": "20030",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "II"
+        ],
+        "blocks_labels": [
+            "D37-D48"
+        ]
+    },
+    {
+        "id_": "26974",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S60-S69"
+        ]
+    },
+    {
+        "id_": "21339",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [
+            "F00-F09"
+        ],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F00-F09"
+        ]
+    },
+    {
+        "id_": "32181",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L60-L75"
+        ]
+    },
+    {
+        "id_": "32394",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E00-E07"
+        ]
+    },
+    {
+        "id_": "16675",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "B50-B64",
+            "P35-P39"
+        ]
+    },
+    {
+        "id_": "15736",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI",
+            "XIII"
+        ],
+        "blocks_labels": [
+            "K50-K52",
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "16491",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F60-F69"
+        ]
+    },
+    {
+        "id_": "32278",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I30-I52"
+        ]
+    },
+    {
+        "id_": "32124",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VII"
+        ],
+        "blocks_labels": [
+            "H46-H48"
+        ]
+    },
+    {
+        "id_": "26359",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K00-K14"
+        ]
+    },
+    {
+        "id_": "14747",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M00-M25"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "13109",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I20-I25"
+        ],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I20-I25"
+        ]
+    },
+    {
+        "id_": "16591",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F20-F29",
+            "F30-F39",
+            "F40-F48",
+            "F90-F98"
+        ]
+    },
+    {
+        "id_": "12292",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "I",
+            "II"
+        ],
+        "blocks_labels": [
+            "B20-B24",
+            "C00-C97"
+        ]
+    },
+    {
+        "id_": "26073",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VII"
+        ],
+        "blocks_labels": [
+            "H15-H22"
+        ]
+    },
+    {
+        "id_": "25250",
+        "chapters_preds": [
+            "VI",
+            "XIX"
+        ],
+        "blocks_preds": [
+            "G50-G59"
+        ],
+        "chapters_labels": [
+            "VI",
+            "XIX"
+        ],
+        "blocks_labels": [
+            "G50-G59",
+            "S40-S49",
+            "S50-S59",
+            "S60-S69"
+        ]
+    },
+    {
+        "id_": "15850",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [
+            "K55-K64"
+        ],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L20-L30"
+        ]
+    },
+    {
+        "id_": "13340",
+        "chapters_preds": [
+            "XXI"
+        ],
+        "blocks_preds": [
+            "Z80-Z99"
+        ],
+        "chapters_labels": [
+            "XXI"
+        ],
+        "blocks_labels": [
+            "Z80-Z99"
+        ]
+    },
+    {
+        "id_": "15823",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [
+            "K55-K64"
+        ],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K55-K64"
+        ]
+    },
+    {
+        "id_": "15766",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K20-K31"
+        ]
+    },
+    {
+        "id_": "26901",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M00-M25"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M60-M79"
+        ]
+    },
+    {
+        "id_": "20004",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "III"
+        ],
+        "blocks_labels": [
+            "D65-D69"
+        ]
+    },
+    {
+        "id_": "24754",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K00-K14"
+        ]
+    },
+    {
+        "id_": "12823",
+        "chapters_preds": [
+            "VI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G20-G26"
+        ]
+    },
+    {
+        "id_": "13072",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I30-I52"
+        ],
+        "chapters_labels": [
+            "IX",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "I30-I52",
+            "P20-P29"
+        ]
+    },
+    {
+        "id_": "32267",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K55-K64"
+        ]
+    },
+    {
+        "id_": "27378",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [
+            "Q80-Q89"
+        ],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q90-Q99"
+        ]
+    },
+    {
+        "id_": "20968",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M60-M79"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M60-M79"
+        ]
+    },
+    {
+        "id_": "32575",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I05-I09",
+            "I30-I52"
+        ]
+    },
+    {
+        "id_": "15849",
+        "chapters_preds": [
+            "II"
+        ],
+        "blocks_preds": [
+            "C00-C97"
+        ],
+        "chapters_labels": [
+            "XVI",
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "P50-P61",
+            "R10-R19"
+        ]
+    },
+    {
+        "id_": "27291",
+        "chapters_preds": [
+            "XVI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XXI"
+        ],
+        "blocks_labels": [
+            "Z00-Z13"
+        ]
+    },
+    {
+        "id_": "24780",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [
+            "K20-K31"
+        ],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K20-K31"
+        ]
+    },
+    {
+        "id_": "14633",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M40-M54"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M40-M54"
+        ]
+    },
+    {
+        "id_": "20019",
+        "chapters_preds": [
+            "III"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "III",
+            "IV"
+        ],
+        "blocks_labels": [
+            "D50-D53",
+            "E50-E64"
+        ]
+    },
+    {
+        "id_": "20657",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E00-E07"
+        ]
+    },
+    {
+        "id_": "25773",
+        "chapters_preds": [
+            "XV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV"
+        ],
+        "blocks_labels": [
+            "O20-O29"
+        ]
+    },
+    {
+        "id_": "31084",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VII"
+        ],
+        "blocks_labels": [
+            "H53-H54"
+        ]
+    },
+    {
+        "id_": "14664",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "32137",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XII"
+        ],
+        "blocks_labels": [
+            "L50-L54"
+        ]
+    },
+    {
+        "id_": "16405",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q10-Q18"
+        ]
+    },
+    {
+        "id_": "20021",
+        "chapters_preds": [
+            "III"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "III"
+        ],
+        "blocks_labels": [
+            "D55-D59"
+        ]
+    },
+    {
+        "id_": "14576",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S10-S19",
+            "S20-S29",
+            "S30-S39"
+        ]
+    },
+    {
+        "id_": "25807",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX",
+            "XV",
+            "XVII"
+        ],
+        "blocks_labels": [
+            "I20-I25",
+            "O94-O99",
+            "Q20-Q28"
+        ]
+    },
+    {
+        "id_": "13825",
+        "chapters_preds": [
+            "XII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "T79-T79",
+            "T80-T88"
+        ]
+    },
+    {
+        "id_": "13036",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IX"
+        ],
+        "blocks_labels": [
+            "I70-I79"
+        ]
+    },
+    {
+        "id_": "13233",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [
+            "E20-E35"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E20-E35"
+        ]
+    },
+    {
+        "id_": "25266",
+        "chapters_preds": [
+            "VI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G40-G47"
+        ]
+    },
+    {
+        "id_": "86870",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q65-Q79"
+        ]
+    },
+    {
+        "id_": "12445",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "O94-O99",
+            "P00-P04"
+        ]
+    },
+    {
+        "id_": "16163",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E10-E14"
+        ]
+    },
+    {
+        "id_": "26033",
+        "chapters_preds": [
+            "VII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q90-Q99"
+        ]
+    },
+    {
+        "id_": "16012",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV"
+        ],
+        "blocks_labels": [
+            "N20-N23"
+        ]
+    },
+    {
+        "id_": "24081",
+        "chapters_preds": [
+            "X"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "X"
+        ],
+        "blocks_labels": [
+            "J60-J70"
+        ]
+    },
+    {
+        "id_": "24725",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K70-K77"
+        ]
+    },
+    {
+        "id_": "15367",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q30-Q34"
+        ]
+    },
+    {
+        "id_": "20020",
+        "chapters_preds": [
+            "III"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "III"
+        ],
+        "blocks_labels": [
+            "D50-D53"
+        ]
+    },
+    {
+        "id_": "15722",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [
+            "K55-K64"
+        ],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K55-K64",
+            "K80-K87"
+        ]
+    },
+    {
+        "id_": "23079",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A20-A28"
+        ]
+    },
+    {
+        "id_": "88581",
+        "chapters_preds": [
+            "VI",
+            "XVII"
+        ],
+        "blocks_preds": [
+            "G90-G99"
+        ],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q80-Q89"
+        ]
+    },
+    {
+        "id_": "27288",
+        "chapters_preds": [
+            "XVIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R10-R19"
+        ]
+    },
+    {
+        "id_": "32183",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A30-A49"
+        ]
+    },
+    {
+        "id_": "83955",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q20-Q28"
+        ]
+    },
+    {
+        "id_": "24744",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K70-K77"
+        ]
+    },
+    {
+        "id_": "81138",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G10-G14"
+        ]
+    },
+    {
+        "id_": "22068",
+        "chapters_preds": [
+            "IX",
+            "XVIII"
+        ],
+        "blocks_preds": [
+            "I30-I52",
+            "R00-R09"
+        ],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R00-R09"
+        ]
+    },
+    {
+        "id_": "27012",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [
+            "M00-M25"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "84889",
+        "chapters_preds": [
+            "XVII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVII"
+        ],
+        "blocks_labels": [
+            "Q90-Q99"
+        ]
+    },
+    {
+        "id_": "49083",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "12787",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E50-E64"
+        ]
+    },
+    {
+        "id_": "32408",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E10-E14"
+        ]
+    },
+    {
+        "id_": "16446",
+        "chapters_preds": [
+            "V"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F10-F19"
+        ]
+    },
+    {
+        "id_": "15376",
+        "chapters_preds": [
+            "X"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "X",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "J90-J94",
+            "P20-P29"
+        ]
+    },
+    {
+        "id_": "26970",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "S10-S19",
+            "S20-S29",
+            "S30-S39"
+        ]
+    },
+    {
+        "id_": "20125",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "V"
+        ],
+        "blocks_labels": [
+            "F40-F48"
+        ]
+    },
+    {
+        "id_": "12772",
+        "chapters_preds": [
+            "VI",
+            "XIII"
+        ],
+        "blocks_preds": [
+            "G50-G59",
+            "M40-M54"
+        ],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M40-M54"
+        ]
+    },
+    {
+        "id_": "24277",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIV"
+        ],
+        "blocks_labels": [
+            "N30-N39"
+        ]
+    },
+    {
+        "id_": "12077",
+        "chapters_preds": [
+            "XIX"
+        ],
+        "blocks_preds": [
+            "T36-T50"
+        ],
+        "chapters_labels": [
+            "XIX"
+        ],
+        "blocks_labels": [
+            "T36-T50"
+        ]
+    },
+    {
+        "id_": "12518",
+        "chapters_preds": [
+            "XV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XV"
+        ],
+        "blocks_labels": [
+            "O00-O08"
+        ]
+    },
+    {
+        "id_": "24764",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [
+            "E70-E90"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E70-E90"
+        ]
+    },
+    {
+        "id_": "32396",
+        "chapters_preds": [
+            "III",
+            "IV"
+        ],
+        "blocks_preds": [
+            "E70-E90"
+        ],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E65-E68"
+        ]
+    },
+    {
+        "id_": "24072",
+        "chapters_preds": [
+            "X"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "X"
+        ],
+        "blocks_labels": [
+            "J09-J18"
+        ]
+    },
+    {
+        "id_": "13968",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I",
+            "VI",
+            "XIII"
+        ],
+        "blocks_labels": [
+            "A30-A49",
+            "G00-G09",
+            "M00-M25"
+        ]
+    },
+    {
+        "id_": "21641",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I",
+            "XIV",
+            "XV"
+        ],
+        "blocks_labels": [
+            "A50-A64",
+            "N70-N77",
+            "O85-O92"
+        ]
+    },
+    {
+        "id_": "25176",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI",
+            "XIII",
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "G70-G73",
+            "M60-M79",
+            "R25-R29"
+        ]
+    },
+    {
+        "id_": "12006",
+        "chapters_preds": [
+            "VIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VIII"
+        ],
+        "blocks_labels": [
+            "H90-H95"
+        ]
+    },
+    {
+        "id_": "23054",
+        "chapters_preds": [
+            "I"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "I"
+        ],
+        "blocks_labels": [
+            "A30-A49"
+        ]
+    },
+    {
+        "id_": "15764",
+        "chapters_preds": [
+            "XI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XI"
+        ],
+        "blocks_labels": [
+            "K20-K31"
+        ]
+    },
+    {
+        "id_": "13067",
+        "chapters_preds": [
+            "IX"
+        ],
+        "blocks_preds": [
+            "I30-I52"
+        ],
+        "chapters_labels": [
+            "IX",
+            "XVI"
+        ],
+        "blocks_labels": [
+            "I30-I52",
+            "P20-P29"
+        ]
+    },
+    {
+        "id_": "24247",
+        "chapters_preds": [
+            "XIV"
+        ],
+        "blocks_preds": [
+            "N40-N51"
+        ],
+        "chapters_labels": [
+            "XIV"
+        ],
+        "blocks_labels": [
+            "N40-N51"
+        ]
+    },
+    {
+        "id_": "25192",
+        "chapters_preds": [
+            "VI",
+            "XIX"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G40-G47"
+        ]
+    },
+    {
+        "id_": "26905",
+        "chapters_preds": [
+            "XIII"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XIII"
+        ],
+        "blocks_labels": [
+            "M60-M79"
+        ]
+    },
+    {
+        "id_": "32406",
+        "chapters_preds": [
+            "IV"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "IV"
+        ],
+        "blocks_labels": [
+            "E10-E14"
+        ]
+    },
+    {
+        "id_": "25254",
+        "chapters_preds": [
+            "VI"
+        ],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "VI"
+        ],
+        "blocks_labels": [
+            "G20-G26"
+        ]
+    },
+    {
+        "id_": "30951",
+        "chapters_preds": [],
+        "blocks_preds": [],
+        "chapters_labels": [
+            "XVIII"
+        ],
+        "blocks_labels": [
+            "R10-R19"
+        ]
+    }
+]
