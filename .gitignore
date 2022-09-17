@@ -108,5 +108,7 @@ ENV/
 # Custom
 .env
 *DS_Store
-/src/playground/
+src/playground/*
+src/es/*
 /data copy
+/exam
